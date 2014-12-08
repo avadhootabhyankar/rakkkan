@@ -1,0 +1,39 @@
+.order-details-div
+{
+	width:90%;
+	margin:10px 5%;
+	padding:10px;
+	float:left;
+}
+.order-status,.order-datails,.order-datetime,.order-no,.order-continue{width:100%;float:left;padding:10px;}
+.order-datails{margin-top:10px;border-top:1px dotted;}
+.order-datails span{font-size:18px;}
+.order-datails table.order-datails-tbl{width:100%;margin-top:10px;}
+.order-datails table.order-datails-tbl thead{background:#CCC;font-size:16px;}
+.order-datails table.order-datails-tbl th{padding:5px 10px;color:#666;}
+.order-datails table.order-datails-tbl td{padding:10px;color:#555;}
+.order-continue button{width:20%;float:right;background:#00c6b2;border-color:#00c6b2;}
+
+.shipping-addr-div
+{
+	width:60%;
+	margin:10px 20%;
+	padding:10px;
+	float:left;
+}
+.sa-txt{width:100%;float:left;padding:10px;font-size:25px;color:#777;}
+.addr-details{margin-top:20px;}
+.addr-details table.address-detail-tbl{width:100%;margin-top:10px;}
+.addr-details table.address-detail-tbl td{padding:5px 10px;}
+button.addr-continue-btn{background:#00c6b2;border-color:#00c6b2;}
+
+.payment-opt-div
+{
+	width:90%;
+	margin:10px 5%;
+	padding:10px;
+	float:left;
+}
+.payment-detail{width:100%;padding:10px;background:#B2F0D1;border:1px solid #33D685;text-align:center;}
+.place-order{width:100%;padding:10px;text-align:center;float:left;}
+.place-order button{width:20%;background:#00c6b2;border-color:#00c6b2;float:left;margin:20px 40%;}

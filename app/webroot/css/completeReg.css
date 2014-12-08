@@ -1,0 +1,62 @@
+.art-body div.complete-reg
+{
+	width:60%;
+	height:auto;
+	float:left;
+	margin-top:100px;
+	margin-left:20%;
+	font-family:sans-serif;
+}
+.art-body div.complete-reg div.title
+{
+	font-size:36px;
+	color:#0099CC;
+	padding: 5px 0px;
+}
+.art-body div.complete-reg span#finding-your-location-msg
+{
+	padding:20px 0px;
+	font-size:25px;
+}
+.art-body div.complete-reg span.find-successfully
+{
+	color:#33D685;
+}
+.art-body div.complete-reg span.find-unsuccessfully
+{
+	color:FF0033;
+}
+
+.art-body div.complete-reg div.conform-adreess-que
+{
+	padding:10px 0px;
+}
+.art-body div.complete-reg div.conform-adreess-que span#id-que
+{
+	font-size:20px;
+	color:#9E9E9E;
+	float:left;
+}
+.art-body div.complete-reg div.conform-adreess-que div.radio-btn
+{
+	margin-left:20px;
+}
+.art-body div.complete-reg div.conform-adreess-que div.enter-correct-address
+{
+	width:100%;
+	float:left;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+.art-body div.complete-reg div.conform-adreess-que div.enter-correct-address input.textbox
+{
+	width:400px;
+	padding:7.5px 10px;
+}
+.art-body div.complete-reg div.complete-reg-btn
+{
+	width:25%;
+	height:auto;
+	float:left;
+	margin:30px 0px;
+}

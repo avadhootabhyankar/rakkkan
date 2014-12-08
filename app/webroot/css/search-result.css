@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+
+.left-block
+{
+	min-height:100%;
+	border:1px solid;
+	width:20%;
+	float:left;
+	margin-left:1%;
+	font-family: sans-serif;
+}
+.right-block
+{
+	min-height:100%;
+	width:77%;
+	float:left;
+	margin-left:10px;
+	font-family: sans-serif;
+}
+.right-block div.search-block-header
+{
+	height:100px;
+	width:100%;
+	float:left;
+	background:#FFF;
+	margin:5px 0px;
+	box-shadow: 0 0 2px 2px #CCC;
+}
+.right-block div.search-block-header div.search-filter-option
+{
+	width:auto;
+	height:50px;
+	float:right;
+	color:#F66;
+	margin:5px 10px;
+}
+.right-block div.search-block
+{
+	height:auto;
+	width:100%;
+	float:left;
+	border-bottom:1px #CCC dashed;
+}
+.search-result
+{
+	width:200px;
+	height:300px;
+	background:#FFF;
+	padding:10px;
+	border-radius:5px;
+	box-shadow: 0 0 2px 2px #CCC;
+	float:left;
+	margin:15px 10px;
+}
+.seacrh-info
+{
+	width:100%;
+	height:300px;
+	background:url(../Images/search-result.png) no-repeat;
+	float:left;
+	font-family:sans-serif;
+}
+.seacrh-info div.product-img
+{
+	width:70%;
+	margin:10px 15%;
+	height:45%;
+	box-shadow: 0 0 1px 1px #999;
+}
+.seacrh-info div.product-img img
+{
+	width:100%;
+	height:100%;
+}
+.seacrh-info div.product-name,.seacrh-info div.product-price,.seacrh-info div.product-rating
+{
+	margin:2.5px 10%;
+}
+.seacrh-info div.product-name 
+{
+	width: 80%;
+	font-family: sans-serif;
+	color: #062039;
+	font-size: 15px;
+}
+.seacrh-info div.product-price
+{
+	width:auto;
+	color:#F66;
+	font-size:16px;
+	border-bottom:1px dashed #AAA;
+	border-top:1px dashed #AAA;
+	display:inline-block;
+	padding:2.5px 5px;
+}
+.seacrh-info div.product-rating
+{
+	width:auto;
+}
+.seacrh-info div.shop-name
+{
+	width:100%;
+	margin-top:20px;
+	font-size:15px;
+}
+.seacrh-info div.distance-time
+{
+	width:100%;
+	margin-top:5px;
+	font-size:13px;
+	color:#AAA;
+}
+.seacrh-info div.distance-time span.dist
+{
+	float:left;
+}
+.seacrh-info div.distance-time span.time
+{
+	float:right;
+}
+
+.search-shop-logo
+{
+	width:50px;
+	height:50px;
+	border-radius:100%;
+	background:url(../Images/icons/shop.png);
+	margin-left:150px;
+	margin-top:200px;
+	box-shadow: 0 0 3px 3px #CCC;
+}
+
+/*--------------------Filter-Container--------------------------*/
+.filter-container
+{
+	width:90%;
+	height:auto;
+	background:#FFF;
+	float:left;
+	margin:5px 5%;
+	box-shadow: 0 0  2px 2px #CCC;	
+}
+.filter-block
+{
+	width:110%;
+	height:50px;
+	margin-left:-5%;
+	margin-top:-2%;
+	float:left;
+	background:#85E6CE;	
+	box-shadow: 0 0 1px 1px #CCC;	
+	text-align: center;
+	font-size: 30px;
+	line-height: 1.75em;
+	color:#2980B9;
+}
+.filter-block div.arrow-left 
+{
+	height: 0px;
+	width: 0px;
+	border-left: 12.5px solid transparent;
+	border-top: 10px solid #007A7A;
+	float: left;
+	position:absolute;
+	margin-top:-0.2%;
+	margin-left:-0.1%;
+}
+.filter-block div.arrow-right 
+{
+	height: 0px;
+	width: 0px;
+	border-right: 12.5px solid transparent;
+	border-top: 10px solid #007A7A;
+	float: left;
+	margin-top:-0.2%;
+	margin-left: 18.7%;
+	position: absolute;
+}
+.filter-container div.filters
+{
+	width:85%;
+	border-bottom:1px dotted #999999;
+	border-top:1px dotted #999999;
+	float:left;
+	padding:5px 5px;
+	margin:10px 0px;
+	margin-left:5.5%;
+	background:#FaFaFa;
+}
+.filter-container div.filters span.title
+{
+	padding:15px 0px;
+	color:	#192B35;
+	font-size:20px;
+}
+.filter-container div.filters div.filters-option
+{
+	width:100%;
+	float:left;
+	padding: 5px 0px;
+	font-size:14px;
+	
+}
+.filter-container div.filters div.filters-option div.price-frm-to
+{
+	width:35%;
+	float:left;
+}
+.input-mini
+{
+	width:20%;
+	padding:5px 5px;
+	border:2px solid #999;	
+}
+.input-medium
+{
+	width:40%;
+	padding:5px 5px;
+	border:2px solid #999;	
+}
+
+.input-max
+{
+	width:60%;
+	background: #FFF;
+	border: 2px solid #999;
+	color: #333;
+	padding: 5px 10px;
+    outline: none;
+}
+.input-max:focus,.input-min:focus,.input-medium:focus
+{
+	outline:none;
+	border: 2px solid #3498db;
+}
+
+
+/*-------------Rating-------------*/
+.rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  width:5.5em;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.5em;
+  font-size:25px;
+  color:#CCC;
+  cursor:pointer;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color:#E68A00;
+}

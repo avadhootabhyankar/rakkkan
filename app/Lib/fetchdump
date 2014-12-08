@@ -1,0 +1,126 @@
+/*session_start();
+
+					$this->helper = new FacebookRedirectLoginHelper($login_url_redirect,$app_id,$app_seceret);
+					FacebookSession::setDefaultApplication($app_id,$app_seceret);
+					//check if a session already exists
+					if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) ) 
+					{
+						// create new session from the stored access_token
+						$this->session = new FacebookSession( $_SESSION['fb_token'] );
+						// validate the access_token and ensure its validity
+						try 
+						{
+							if ( !$this->session->validate() ) 
+							{
+								$this->session = null;
+							}
+						} 
+						catch ( Exception $e ) 
+						{
+							// catch any exceptions
+							$this->session = null;
+						}
+					}
+					if ( !isset( $this->session ) || $this->session === null )
+					{
+						try
+						{
+							$this->session = $this->helper->getSessionFromRedirect();
+						}
+						catch(FacebookRequestException $ex)
+						{
+							// When 	Facebook returns an error
+							print_r( $ex );// or echo any appropriate message
+						}
+						catch( Exception $ex )
+						{
+							// When validation fails or other local issues
+							print_r( $ex );// or echo any appropriate message
+						}
+
+					}
+					if(isset($this->session))
+					{ 
+						// storing or remembering the session
+						$_SESSION['fb_token'] = $this->session->getToken();
+						// create a session using the stored token or the new one we generated at login
+					}*/
+
+					/*session_start();
+
+					FacebookSession::setDefaultApplication($app_id,$app_secret);
+					$this->helper = new FacebookRedirectLoginHelper($login_redirect);
+					if ( isset( $_SESSION ) && isset( $_SESSION['fb_token'] ) )
+					{
+						/*$session = new FacebookSession( $_SESSION['fb_token'] );
+						//header("Location:http://localhost/rakkan/Users/uhome");
+						//die();
+						$this->session = new FacebookSession( $_SESSION['fb_token'] );
+						try 
+						{
+							if ( !$this->session->validate() ) 
+							{
+								$this->session = null;
+							}
+						} 
+						catch ( Exception $e ) 
+						{
+							// catch any exceptions
+							$this->session = null;
+						}
+					}
+					if ( !isset( $this->session ) || $this->session === null )
+					{
+						try
+						{
+							$this->session = $this->helper->getSessionFromRedirect();}
+							catch(FacebookRequestException $ex)
+							{
+								// When Facebook returns an error
+								print_r( $ex );// or echo any appropriate message
+							}
+							catch( Exception $ex )
+							{
+								// When validation fails or other local issues
+								print_r( $ex );// or echo any appropriate message
+							}
+						
+							if (isset($this->session)) 
+							{
+ 			 					echo "heyy working";
+                				$_SESSION['fb_token'] = $this->session->getToken();
+							}
+							else
+							{
+								echo "not working";
+								//$session->delete(S'FB');
+								//return ('<a href="'.$loginUrl.'">'.$login_tag.'</a>');
+							}
+					}
+				}*/
+				/*session_start();
+
+				$this->helper = new FacebookRedirectLoginHelper($login_redirect,$app_id,$app_secret);
+				FacebookSession::setDefaultApplication($app_id,$app_secret);
+				try 
+				{
+  					$this->session = $this->helper->getSessionFromRedirect();
+  					// var_dump($session);
+				}
+				catch(FacebookRequestException $ex) 
+				{
+				} 
+				catch(Exception $ex) 
+				{
+				}
+				if ($this->session) 
+				{	
+						echo "heyy working";
+                		$_SESSION['fb_token'] = $this->session->getToken();
+				}
+				else
+				{
+						echo "not working";
+						//$session->delete(S'FB');
+								//return ('<a href="'.$loginUrl.'">'.$login_tag.'</a>');
+				}*/
